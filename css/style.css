@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #b91450;
+}
+/* UTILITIES */
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+.mg-t-30 {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* TYPOGRAFY */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+/* LAYOUT */
+.container{
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.input-dati,
+.dati-biglietto {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.input-dati {
+  border-radius: 10px;
+  box-shadow: 5px 8px 8px 10px rgba(0, 0, 0, .1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 30%;
+  text-align: center;
+}
+
+input,
+select {
+  width: 75%;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.interaction {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dati-biglietto .col{
+ flex-basis: 30%;
+}
+
+.passeggero,
+.offerta {
+  padding: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.passeggero {
+  background-color: grey;
+}
+
+.offerta {
+ flex-grow: 1;
+}
+
+table {
+  width: 100%;
+}

@@ -8,7 +8,7 @@
   <body>
 <!-- INPUT: DATI INSERITI DALL'UTENTE -->
     <div class="container">
-      <h1> Calcola il prezzo del tuo biglietto</h1>
+      <h1 class="mg-b-30 text-center"> Calcola il prezzo del tuo biglietto</h1>
       <section class="input-dati">
         <div class="row">
           <div class="col">
@@ -37,45 +37,55 @@
       </section>
     </div>
 <!-- OUTPUT: CALCOLO BIGLIETTO -->
-    <section id="biglietto">
-      <h2>Il tuo biglietto</h2>
-      <div class="dati-biglietto">
-        <h2>Dettagli passeggeri</h2>
-        <div class="passeggero">
-          <h3>Nome Passeggero:
-           <span id="nomePasseggero"></span>
-         </h3>
+    <div class="container">
+      <section id="biglietto" class="hidden">
+        <h2 class="mg-t-30 text-center">Il tuo biglietto</h2>
+        <div class="dati-biglietto">
+          <h3 class="mg-t-30">Dettagli passeggeri</h3>
+          <div class="row">
+            <div class="col">
+              <div class="passeggero">
+                <h3>Nome Passeggero
+                  <div id="nomePasseggero"></div>
+               </h3>
+              </div>
+            </div>
+
+              <div class="offerta">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Offerta</th>
+                      <th>Carrozza</th>
+                      <th>Codice CP</th>
+                      <th>Costo Biglietto</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td>
+                        <span id="discount"></span>
+                      </td>
+                      <td>
+                        <span id="numCarrozza"></span>
+                      </td>
+                      <td>
+                        <span id="codice-cp"></span>
+                      </td>
+                      <td>
+                        <span id="costoBiglietto"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+          </div>
+
         </div>
-        <div class="offerta">
-          <table>
-            <thead>
-              <tr>
-                <th>Offerta</th>
-                <th>Carrozza</th>
-                <th>Codice CP</th>
-                <th>Costo Biglietto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span id="discount"></span>
-                </td>
-                <td>
-                  <span id="numCarrozza"></span>
-                </td>
-                <td>
-                  <span id="codice-cp"></span>
-                </td>
-                <td>
-                  <span id="costoBiglietto"></span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
 
 
     <script src="./js/main.js" charset="utf-8"></script>

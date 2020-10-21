@@ -44,6 +44,8 @@ btnGenera.addEventListener('click', function () {
   document.getElementById('numCarrozza').innerHTML = numCarrozza;
   document.getElementById('codice-cp').innerHTML = codiceCp;
   document.getElementById('costoBiglietto').innerHTML = costoBiglietto;
+
+  calcTicket.className = 'show';
 });
 
 // CLICK SUL BOTTONE "ANNULLA"
@@ -58,4 +60,7 @@ btnGenera.addEventListener('click', function () {
    document.getElementById('numCarrozza').innerHTML = '';
    document.getElementById('codice-cp').innerHTML = '';
    document.getElementById('costoBiglietto').innerHTML = '';
+
+   calcTicket.className = 'hidden';
+
  });
