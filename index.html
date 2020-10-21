@@ -6,6 +6,77 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+<!-- INPUT: DATI INSERITI DALL'UTENTE -->
+    <div class="container">
+      <h1> Calcola il prezzo del tuo biglietto</h1>
+      <section class="input-dati">
+        <div class="row">
+          <div class="col">
+            <label for="userName"> Nome e Cognome </label>
+            <input type="text" id="userName" name="userName"
+                  placeholder="Inserisci Nome e Cognome">
+          </div>
+          <div class="col">
+            <label for="distanzaKM"> Km da percorrere </label>
+            <input type="text" id="distanzaKM" name="distanzaKM"
+                  placeholder="Inserisci i KM da percorrere">
+          </div>
+          <div class="col">
+            <label for="fasciaEta"> Fascia d'età </label>
+            <select  name="fasciaEta" id="fasciaEta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="interaction">
+          <button id="btn-genera" class="btn"> Genera </button>
+          <button id="btn-annulla" class="btn"> Annulla </button>
+        </div>
+      </section>
+    </div>
+<!-- OUTPUT: CALCOLO BIGLIETTO -->
+    <section id="biglietto">
+      <h2>Il tuo biglietto</h2>
+      <div class="dati-biglietto">
+        <h2>Dettagli passeggeri</h2>
+        <div class="passeggero">
+          <h3>Nome Passeggero:
+           <span id="nomePasseggero"></span>
+         </h3>
+        </div>
+        <div class="offerta">
+          <table>
+            <thead>
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo Biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span id="discount"></span>
+                </td>
+                <td>
+                  <span id="numCarrozza"></span>
+                </td>
+                <td>
+                  <span id="codice-cp"></span>
+                </td>
+                <td>
+                  <span id="costoBiglietto"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
 
     <script src="./js/main.js" charset="utf-8"></script>
   </body>
